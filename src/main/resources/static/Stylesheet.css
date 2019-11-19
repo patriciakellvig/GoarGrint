@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    background-color: lightpink;
+}
+
+header{
+    width:100%;
+    height: 50px;
+    background-color: #ff8eb1;
+    margin-top:0;
+}
+
+p#pHeader{
+    font-size: 230%;
+    float: right;
+    margin-right:15%;
+}
+
+
+footer{
+    background-color: #ff8eb1;
+    width:100%;
+    height: 50px;
+}
+
+p#pFooter{
+    font-size: 150%;
+    margin: 0 43%;
+}
+
+div#Wrapper{
+    width: 80%;
+    height: auto;
+    align-content: center;
+    padding:0 20%;
+
+}
+
+h1{
+    align-content: center;
+}
+
+div#goats{
+    border-radius: 30px;
+    width: 500px;
+    padding: 10px;
+    align-content: center;
+    background-color: white;
+    margin: 5% 0;
+    position: relative;
+}
+
+p{
+    font-size: larger;
+    margin: 2px;
+    min-width: 100px;
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+    margin-top:-90px;
+    float:right;
+}
+
+#buttons{
+    width:100%;
+    align-content: center;
+    overflow: hidden;
+}
+
+.fa-thumbs-down, .fa-thumbs-up{
+    font-size: 200%;
+}
+
+button{
+    margin: 5px 10px;
+    overflow: hidden;
+}
+
+.buttonLike {
+    box-shadow:inset 0px 1px 0px 0px #caefab;
+    background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    background-color:#77d42a;
+    border-radius:6px;
+    border:1px solid #268a16;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #aade7c;
+}
+.buttonLike:hover {
+    background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    background-color:#5cb811;
+}
+.buttonLike:active {
+    position:relative;
+    top:1px;
+}
+
+.buttonDislike {
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+    background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color:#fe1a00;
+    border-radius:6px;
+    border:1px solid #d83526;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+}
+.buttonDislike:hover {
+    background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+    background-color:#ce0100;
+}
+.buttonDislike:active {
+    position:relative;
+    top:1px;
+}
+
+#board {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+.card {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 1%;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1);
+    background-color: white;
+    transform: translateX(-50%) translateY(-50%) scale(0.95);
+}

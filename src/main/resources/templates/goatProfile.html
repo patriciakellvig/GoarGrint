@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <script src="https://use.fontawesome.com/486c136f9c.js"></script>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+</head>
+<body>
+
+<header>
+    <p id="pHeader"><i class="fa fa-home"></i></p>
+</header>
+
+<div id="Wrapper">
+
+    <div class="input_form">
+        <form action="/api/goats" method="post" id="myform">
+            <input type="hidden" name="id" th:value="${goat.id}"/><br>
+            <label>Id:
+                <input type="text" disabled name="idNotHidden" th:value="${goat.id}"/>
+            </label>
+            <label>Navn:
+                <input type="text" name="f_Name" th:value="${goat.name}"/>
+            </label>
+            <label>Fødselsdag:
+                <input type="text" name="l_Name" th:value="${goat.dob}"/>
+            </label>
+            <label>Gender:
+                <input type="text" name="phone" th:value="${goat.gender}"/>
+            </label>
+            <label>Lang beskrivelse:
+                <input type="text" name="email" th:value="${goat.long_description}"/>
+            </label>
+            <label>Kort beskrivelse:
+                <input type="text" name="email" th:value="${goat.short_description}"/>
+            </label>
+            <label>Brugernavn:
+                <input type="text" name="f_Name" th:value="${goat.username}"/>
+            </label>
+
+        </form>
+
+
+    </div>
+
+
+    <!-- <div class="input_form">
+        <form action="/admin/member" method="post" id="myform">
+            <input type="hidden" name="id" th:value="${member.id}"/><br>
+            <label>Id:
+                <input type="text" disabled name="idNotHidden" th:value="${member.id}"/>
+            </label>
+            <label>Fornavn:
+                <input type="text" name="f_Name" th:value="${member.f_Name}"/>
+            </label>
+            <label>Efternavn:
+                <input type="text" name="l_Name" th:value="${member.l_Name}"/>
+            </label>
+            <label>Telefonnummer:
+                <input type="text" name="phone" th:value="${member.phone}"/>
+            </label>
+            <label>E-mail:
+                <input type="text" name="email" th:value="${member.email}"/>
+            </label>
+        </form>
+    </div>
+    -->
+
+</div>
+
+
+<footer>
+    <p id="pFooter"><i class="fa fa-copyright"></i> GoatGrindr</p>
+</footer>
+
+</body>
+</html>
