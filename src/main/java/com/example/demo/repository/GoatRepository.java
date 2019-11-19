@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.thymeleaf.templateresolver.ITemplateResolver;
 
 import java.util.Date;
 
@@ -48,6 +49,9 @@ public interface GoatRepository extends CrudRepository<Goat, Long> {
 //    Goat updateGoat(String name, Date dob, String longDescription, String shortDescription, Gender gender,
 //                    String username, String password, long id);
 
+
+//    @Query("UPDATE goats SET name=?, username=?, long_description=?, short_description=?, dob=?, gender=?, password=? WHERE id=?")
+//    Iterable<Goat> updateGoat();
 
 
     /*
