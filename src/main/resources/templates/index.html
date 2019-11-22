@@ -11,7 +11,7 @@
 <body>
 
 <header>
-    <p id="pHeader"><i class="fa fa-id-card"></i></p>
+    <p id="pHeader"><a href="/goatProfile.html"> <i class="fa fa-id-card"></i></a></p>
 </header>
 
 <div id="Wrapper">
@@ -23,25 +23,27 @@
         <div id="board">
             <div class="card"></div>
         </div>
-        <div th:each="goats:${goats}">
+        <div  style="height: 20px; background-color: #ce0100;">
 
-            <!--<h3 style="font-size: 120%; margin-left:35%;">Goats</h3>-->
+            <table>
+                <tbody>
+                <tr th:each="goat: ${goat}">
+                <td th:value="${goat.name}">
+                    <p style="font-weight: bold; ">Navn</p>
+                </td>
+                <td th:value="${dob}">
+                <p ></p>
+                </td>
+                <td th:value="${short_description}">
+                <p ></p>
+                </td>
+                <td th:value="${gender}">
 
-            <p style="font-weight: bold; " th:text="${goats.name}">Navn</p>
-            <!--
-            <p th:value="${goats.name}></p>
-
-             <p th:value="${goats.dob}"></p>
-
-              <p th:value="${goats.short_description}"></p>
-
-                  <p th:value="${goats.gender}"></p>
-
-             -->
-            <p th:text="${goats.dob}"></p>
-            <p th:text="${goats.short_description}"></p>
-
-            <p th:text="${goats.gender}"></p>
+                <p ></p>
+                </td>
+                </tr>
+                </tbody>
+            </table>
 
         </div>
         <div id="buttons">

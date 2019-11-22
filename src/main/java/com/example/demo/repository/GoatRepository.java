@@ -17,7 +17,10 @@ import java.util.Date;
 @Repository
 public interface GoatRepository extends CrudRepository<Goat, Long> {
 
-    //find og s� kan du finde by eller first osv, og s� kan du chaine til dit model lag med goats, liges�
+    //GoatRepository goatRepo = context.getBean(GoatRepository.class);
+
+
+    //find og så kan du finde by eller first osv, og s� kan du chaine til dit model lag med goats, liges�
     //mange du vil.. fucking smart alts�!!!
 
 
@@ -27,7 +30,11 @@ public interface GoatRepository extends CrudRepository<Goat, Long> {
 
     Goat findFirstByName(String name);
 
+   // Goat findAll(Goat goat);
+
     Goat findAllByGender(Gender gender);
+
+   // Goat findById(long id);
 
     //Goat findGoatByRandom(Goat goat);
 
@@ -52,13 +59,35 @@ public interface GoatRepository extends CrudRepository<Goat, Long> {
 
 //    @Query("UPDATE goats SET name=?, username=?, long_description=?, short_description=?, dob=?, gender=?, password=? WHERE id=?")
 //    Iterable<Goat> updateGoat();
-
-
     /*
     *
     * @Modifying
 @Query("UPDATE User SET name=(:name) WHERE id=(:id)")
 public void updateName(@Param("name")String name, @Param("id")Long id);*/
+//    /**
+//     * Opdaterer medlemsoplysninger
+//     * @param m medlems-objektet der skal opdateres
+////     */
+//    public void update(Member m) {
+//        String sql = "UPDATE member SET id=?, f_name=?, l_name=?, phone=?, email=? WHERE id=?";
+//        template.update(sql, m.getId(), m.getF_Name(), m.getL_Name(), m.getPhone(), m.getEmail(), m.getId());
+//    }
+//
+
+//Update goat
+    //brug .save ligesom når du opretter.
+  /* Goat goat = new Goat();
+    goat.setName();
+    goat.setPassword();
+    Goat.save(goat);
+*/
+    //MerchandiseEntity pantsInDB = repo.findById(pantsId).get();
+    //pantsInDB.setPrice(44.99);
+    //repo.save(pantsInDB);
+
+    //Update goat
+    @Query(value = "UPDATE * FROM Goats g WHERE g.id=?", nativeQuery = true)
+    Goat updateGoat();
 
 
 

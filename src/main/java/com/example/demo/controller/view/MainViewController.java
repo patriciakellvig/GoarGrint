@@ -24,6 +24,11 @@ public class MainViewController {
         return "index.html";
     }
 
+//    @GetMapping(value = "/goatProfile.html")
+//    public String profile(Model model){
+//        return "goatProfile.html";
+//    }
+
 //    @GetMapping(value = "/carousel")
 //    public String Carousel(Model model){
 //        return "/carousel/carousel.html";
