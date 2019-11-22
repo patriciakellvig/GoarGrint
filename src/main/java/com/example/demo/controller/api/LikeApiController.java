@@ -37,6 +37,8 @@ public class LikeApiController {
     @PostMapping(value = "/like")
     public Like createLike (@Valid @RequestBody Like like){
         //Gemmer en ny række med et like og en liked i Like tabellen
+
+        //Skal lave sådan så at goatljker er den som er logget ind og liked er den vi har skrevet ud på forsiden.
         return likeRepository.save(like);
     }
 

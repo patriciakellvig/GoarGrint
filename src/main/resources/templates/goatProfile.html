@@ -16,27 +16,27 @@
 
     <div class="input_form">
         <form action="/api/goats" method="post" id="myform">
-            <input type="hidden" name="id" th:value="${goats.id}"/><br>
+            <input type="hidden" name="id" th:value="${id}"/><br>
             <label>Id:
-                <input type="text" disabled name="idNotHidden" th:value="${goats.id}"/>
+                <input type="text" disabled name="idNotHidden" th:value="${id}"/>
             </label>
             <label>Navn:
-                <input type="text" name="name" th:value="${goats.name}"/>
+                <input type="text" name="name" th:value="${name}"/>
             </label>
             <label>Fødselsdag:
-                <input type="text" name="dob" th:value="${goats.dob}"/>
+                <input type="text" name="dob" th:value="${dob}"/>
             </label>
             <label>Gender:
-                <input type="text" name="gender" th:value="${goats.gender}"/>
+                <input type="text" name="gender" th:value="${gender}"/>
             </label>
             <label>Lang beskrivelse:
-                <input type="text" name="long_description" th:value="${goats.long_description}"/>
+                <input type="text" name="long_description" th:value="${long_description}"/>
             </label>
             <label>Kort beskrivelse:
-                <input type="text" name="short_description" th:value="${goats.short_description}"/>
+                <input type="text" name="short_description" th:value="${short_description}"/>
             </label>
             <label>Brugernavn:
-                <input type="text" name="username" th:value="${goats.username}"/>
+                <input type="text" name="username" th:value="${username}"/>
             </label>
 
         </form>
